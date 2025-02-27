@@ -21,7 +21,7 @@ for ALL the SCENARIOS and even STEPS.
 public class Hooks {
 
     //import the @Before coming from io.cucumber.java
-    @Before (order = 1)
+    @Before ()
     public void setupMethod(){
 
         Driver.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
