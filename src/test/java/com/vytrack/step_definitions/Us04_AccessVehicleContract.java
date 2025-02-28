@@ -22,9 +22,6 @@ public class Us04_AccessVehicleContract {
 
     @When("the user navigates to the Vehicle Contracts page")
     public void the_user_navigates_to_the_vehicle_contracts_page() {
-        Driver.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
-        Driver.getDriver().get(ConfigurationReader.getProperty("url"));
-
         BrowserUtils.waitFor(3);
         loginPage.fleetModuleFromMainMenu.click();
         loginPage.vehicleContractOption.click();
