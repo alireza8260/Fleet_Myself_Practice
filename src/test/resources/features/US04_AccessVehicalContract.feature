@@ -12,7 +12,6 @@ Feature: Access to vehicle contract
       | userType      |
       | sales_manager |
       | store_manager |
-  @smoke
   Scenario: Verify Drivers cannot access the Vehicle Contracts page
     Given the user is logged into the application as driver
     When the user attempts to navigate to the Vehicle Contracts page

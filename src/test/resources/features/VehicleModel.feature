@@ -1,7 +1,7 @@
 Feature: Vehicles Model page columns verification
 
   Background:
-
+@smoke
   Scenario Outline: Verify Store managers and Sales managers can see 10 columns on the Vehicles Model page
     Given the user logged in asa Store or Sales manager "<userType>"
     When the user navigates to the Vehicles Model page
